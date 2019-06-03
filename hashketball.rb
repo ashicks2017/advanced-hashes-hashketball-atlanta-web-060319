@@ -170,15 +170,13 @@ def team_colors(team)
 
 
 def player_numbers (team_name)
-  jersey = []
-  game_hash.each do |team, team_details_hash|
-    team_details_hash.each do |attribute, info|
-       if attribute == team_name
-            jersey <<  game_hash[:home][:player][:number]
-          end
-        end
-      end
-  jersey
+  jersey = [ ]
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, stats|
+      if attribute == team_name
+        return 
+    
+
 end
 
 
